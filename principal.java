@@ -1,30 +1,26 @@
-package SUAP;
+package Facebook;
 
 public class principal {
 
 	public static void main(String[] args) {
+		post Post = new post ("Na vida o plantio é opcional, porém, a colheita é obrigatória. "
+				+ "Por isso tome cuidado com o que você planta porque o que você plantar, "
+				+ "você vai colher.", "https://driveandlisten.herokuapp.com/");
 		
-		Aluno A1 = new Aluno ("Luciane Eloiza", "098.608.450-59");
-		A1.nota1 = 9;
-		A1.nota2 = 8;
-		A1.nota3 = 9;
 		
-		A1.Calcularmedia();
+	Post.curtir(3);
+	
+	System.out.println ("o número de curtidas são " +Post.numerocurtidas);
+	
+	Post.compartilhar(2);
+	System.out.println ("o número de compartilhamento são " +Post.numerocompartilhamentos);
+	
 		
-		System.out.println("media será de: " + A1.Calcularmedia());
-		System.out.println("modificando 2° nota..." );
 		
-		A1.nota1 = 9;
-		A1.nota2 = 10;
-		A1.nota3 = 9;
 		
-		A1.Calcularmedia();
-		
-		System.out.println("media será de: " + A1.Calcularmedia());
-		
-        
-        
-         
+
 	}
 
+
+	
 }
