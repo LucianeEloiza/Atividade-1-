@@ -1,35 +1,26 @@
-package Street_fighter;
+package Facebook;
 
 public class principal {
 
 	public static void main(String[] args) {
-		
-		lutador ryu = new lutador("ryu", 100, 10);
-		lutador Bison = new lutador("Bison", 100, 12);
-		
-		ryu.aplicarGolpe("Bison");
-		ryu.aplicarGolpe("Bison");
-		ryu.aplicarGolpe("Bison");
-		
-		System.out.println ("energia do bison: " +Bison.energia);
-		
-		Bison.aplicarGolpe("Ryu");
-		Bison.aplicarGolpe("Ryu");
-		Bison.aplicarGolpe("Ryu");
-		Bison.aplicarGolpe("Ryu");
-		Bison.aplicarGolpe("Ryu");
-		Bison.aplicarGolpe("Ryu");
-		Bison.aplicarGolpe("Ryu");
-		Bison.aplicarGolpe("Ryu");
-
-		System.out.println ("energia Ryu: " +ryu.energia);
+		post Post = new post ("Na vida o plantio é opcional, porém, a colheita é obrigatória. "
+				+ "Por isso tome cuidado com o que você planta porque o que você plantar, "
+				+ "você vai colher.", "https://driveandlisten.herokuapp.com/");
 		
 		
+	Post.curtir(3);
+	
+	System.out.println ("o número de curtidas são " +Post.numerocurtidas);
+	
+	Post.compartilhar(2);
+	System.out.println ("o número de compartilhamento são " +Post.numerocompartilhamentos);
+	
 		
 		
 		
 
 	}
+
 
 	
 }
